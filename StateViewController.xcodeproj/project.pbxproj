@@ -13,9 +13,11 @@
 		20316D6D2491A64F00919B8C /* StateViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20316D6B2491A64F00919B8C /* StateViewController.xcdatamodeld */; };
 		20316D6F2491A65100919B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20316D6E2491A65100919B8C /* Assets.xcassets */; };
 		20316D722491A65100919B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20316D702491A65100919B8C /* LaunchScreen.storyboard */; };
-		20C3ADB12492F15900CCD041 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3ADB02492F15900CCD041 /* CollectionViewController.swift */; };
+		20C3ADB12492F15900CCD041 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3ADB02492F15900CCD041 /* MainViewController.swift */; };
 		20C3ADB82493197900CCD041 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 20C3ADB72493197900CCD041 /* loading.json */; };
 		20C3ADBB24931A4D00CCD041 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 20C3ADBA24931A4D00CCD041 /* Lottie */; };
+		20C3ADBE2493E0B600CCD041 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3ADBD2493E0B600CCD041 /* extensions.swift */; };
+		20C3ADC02493E10F00CCD041 /* tableviewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3ADBF2493E10F00CCD041 /* tableviewStates.swift */; };
 		D96610D2E9F738436276207D /* Pods_StateViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721C2C229D16A4B7809FD8E6 /* Pods_StateViewController.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +31,10 @@
 		20316D6E2491A65100919B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20316D712491A65100919B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20316D732491A65100919B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20C3ADB02492F15900CCD041 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		20C3ADB02492F15900CCD041 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20C3ADB72493197900CCD041 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		20C3ADBD2493E0B600CCD041 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		20C3ADBF2493E10F00CCD041 /* tableviewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableviewStates.swift; sourceTree = "<group>"; };
 		721C2C229D16A4B7809FD8E6 /* Pods_StateViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59A7B0E024E3C65FC799B6C /* Pods-StateViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateViewController.release.xcconfig"; path = "Target Support Files/Pods-StateViewController/Pods-StateViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +73,7 @@
 		20316D612491A64F00919B8C /* StateViewController */ = {
 			isa = PBXGroup;
 			children = (
-				20C3ADB22492F21D00CCD041 /* Views */,
+				20C3ADBC2493E0A000CCD041 /* utils */,
 				20316D622491A64F00919B8C /* AppDelegate.swift */,
 				20C3ADB72493197900CCD041 /* loading.json */,
 				20316D642491A64F00919B8C /* SceneDelegate.swift */,
@@ -78,16 +82,18 @@
 				20316D702491A65100919B8C /* LaunchScreen.storyboard */,
 				20316D732491A65100919B8C /* Info.plist */,
 				20316D6B2491A64F00919B8C /* StateViewController.xcdatamodeld */,
-				20C3ADB02492F15900CCD041 /* CollectionViewController.swift */,
+				20C3ADB02492F15900CCD041 /* MainViewController.swift */,
 			);
 			path = StateViewController;
 			sourceTree = "<group>";
 		};
-		20C3ADB22492F21D00CCD041 /* Views */ = {
+		20C3ADBC2493E0A000CCD041 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				20C3ADBD2493E0B600CCD041 /* extensions.swift */,
+				20C3ADBF2493E10F00CCD041 /* tableviewStates.swift */,
 			);
-			path = Views;
+			path = utils;
 			sourceTree = "<group>";
 		};
 		301F608A2C0C1659B005CAE9 /* Frameworks */ = {
@@ -228,11 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C3ADC02493E10F00CCD041 /* tableviewStates.swift in Sources */,
 				20316D6D2491A64F00919B8C /* StateViewController.xcdatamodeld in Sources */,
 				20316D672491A64F00919B8C /* ViewController.swift in Sources */,
 				20316D632491A64F00919B8C /* AppDelegate.swift in Sources */,
 				20316D652491A64F00919B8C /* SceneDelegate.swift in Sources */,
-				20C3ADB12492F15900CCD041 /* CollectionViewController.swift in Sources */,
+				20C3ADB12492F15900CCD041 /* MainViewController.swift in Sources */,
+				20C3ADBE2493E0B600CCD041 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
