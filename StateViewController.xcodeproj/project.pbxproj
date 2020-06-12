@@ -3,29 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		20316D632491A64F00919B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20316D622491A64F00919B8C /* AppDelegate.swift */; };
 		20316D652491A64F00919B8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20316D642491A64F00919B8C /* SceneDelegate.swift */; };
 		20316D672491A64F00919B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20316D662491A64F00919B8C /* ViewController.swift */; };
-		20316D6A2491A64F00919B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20316D682491A64F00919B8C /* Main.storyboard */; };
 		20316D6D2491A64F00919B8C /* StateViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20316D6B2491A64F00919B8C /* StateViewController.xcdatamodeld */; };
 		20316D6F2491A65100919B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20316D6E2491A65100919B8C /* Assets.xcassets */; };
 		20316D722491A65100919B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20316D702491A65100919B8C /* LaunchScreen.storyboard */; };
+		20C3ADB12492F15900CCD041 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3ADB02492F15900CCD041 /* CollectionViewController.swift */; };
+		20C3ADB82493197900CCD041 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 20C3ADB72493197900CCD041 /* loading.json */; };
+		20C3ADBB24931A4D00CCD041 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 20C3ADBA24931A4D00CCD041 /* Lottie */; };
+		D96610D2E9F738436276207D /* Pods_StateViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721C2C229D16A4B7809FD8E6 /* Pods_StateViewController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AA56C721CC9695D1688F17B /* Pods-StateViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateViewController.debug.xcconfig"; path = "Target Support Files/Pods-StateViewController/Pods-StateViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		20316D5F2491A64F00919B8C /* StateViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20316D622491A64F00919B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20316D642491A64F00919B8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		20316D662491A64F00919B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20316D692491A64F00919B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20316D6C2491A64F00919B8C /* StateViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateViewController.xcdatamodel; sourceTree = "<group>"; };
 		20316D6E2491A65100919B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20316D712491A65100919B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20316D732491A65100919B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C3ADB02492F15900CCD041 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		20C3ADB72493197900CCD041 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		721C2C229D16A4B7809FD8E6 /* Pods_StateViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59A7B0E024E3C65FC799B6C /* Pods-StateViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateViewController.release.xcconfig"; path = "Target Support Files/Pods-StateViewController/Pods-StateViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96610D2E9F738436276207D /* Pods_StateViewController.framework in Frameworks */,
+				20C3ADBB24931A4D00CCD041 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				20316D612491A64F00919B8C /* StateViewController */,
 				20316D602491A64F00919B8C /* Products */,
+				CD51B05C7ADB1874C409A92D /* Pods */,
+				301F608A2C0C1659B005CAE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +69,42 @@
 		20316D612491A64F00919B8C /* StateViewController */ = {
 			isa = PBXGroup;
 			children = (
+				20C3ADB22492F21D00CCD041 /* Views */,
 				20316D622491A64F00919B8C /* AppDelegate.swift */,
+				20C3ADB72493197900CCD041 /* loading.json */,
 				20316D642491A64F00919B8C /* SceneDelegate.swift */,
 				20316D662491A64F00919B8C /* ViewController.swift */,
-				20316D682491A64F00919B8C /* Main.storyboard */,
 				20316D6E2491A65100919B8C /* Assets.xcassets */,
 				20316D702491A65100919B8C /* LaunchScreen.storyboard */,
 				20316D732491A65100919B8C /* Info.plist */,
 				20316D6B2491A64F00919B8C /* StateViewController.xcdatamodeld */,
+				20C3ADB02492F15900CCD041 /* CollectionViewController.swift */,
 			);
 			path = StateViewController;
+			sourceTree = "<group>";
+		};
+		20C3ADB22492F21D00CCD041 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		301F608A2C0C1659B005CAE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				721C2C229D16A4B7809FD8E6 /* Pods_StateViewController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD51B05C7ADB1874C409A92D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AA56C721CC9695D1688F17B /* Pods-StateViewController.debug.xcconfig */,
+				F59A7B0E024E3C65FC799B6C /* Pods-StateViewController.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +114,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20316D762491A65100919B8C /* Build configuration list for PBXNativeTarget "StateViewController" */;
 			buildPhases = (
+				9DD8B92E0B70FECEBFC4AEF3 /* [CP] Check Pods Manifest.lock */,
 				20316D5B2491A64F00919B8C /* Sources */,
 				20316D5C2491A64F00919B8C /* Frameworks */,
 				20316D5D2491A64F00919B8C /* Resources */,
+				D0A78E123ADFC15DF55EF0B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = StateViewController;
+			packageProductDependencies = (
+				20C3ADBA24931A4D00CCD041 /* Lottie */,
+			);
 			productName = StateViewController;
 			productReference = 20316D5F2491A64F00919B8C /* StateViewController.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 20316D562491A64F00919B8C;
+			packageReferences = (
+				20C3ADB924931A4D00CCD041 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 20316D602491A64F00919B8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,11 +175,53 @@
 			files = (
 				20316D722491A65100919B8C /* LaunchScreen.storyboard in Resources */,
 				20316D6F2491A65100919B8C /* Assets.xcassets in Resources */,
-				20316D6A2491A64F00919B8C /* Main.storyboard in Resources */,
+				20C3ADB82493197900CCD041 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DD8B92E0B70FECEBFC4AEF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StateViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A78E123ADFC15DF55EF0B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StateViewController/Pods-StateViewController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StateViewController/Pods-StateViewController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StateViewController/Pods-StateViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20316D5B2491A64F00919B8C /* Sources */ = {
@@ -145,20 +232,13 @@
 				20316D672491A64F00919B8C /* ViewController.swift in Sources */,
 				20316D632491A64F00919B8C /* AppDelegate.swift in Sources */,
 				20316D652491A64F00919B8C /* SceneDelegate.swift in Sources */,
+				20C3ADB12492F15900CCD041 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20316D682491A64F00919B8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				20316D692491A64F00919B8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		20316D702491A65100919B8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +366,7 @@
 		};
 		20316D772491A65100919B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA56C721CC9695D1688F17B /* Pods-StateViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +385,7 @@
 		};
 		20316D782491A65100919B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59A7B0E024E3C65FC799B6C /* Pods-StateViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20C3ADB924931A4D00CCD041 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20C3ADBA24931A4D00CCD041 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20C3ADB924931A4D00CCD041 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		20316D6B2491A64F00919B8C /* StateViewController.xcdatamodeld */ = {
